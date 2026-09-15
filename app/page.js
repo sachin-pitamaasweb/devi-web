@@ -177,7 +177,7 @@ export default function Home() {
                 <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 
                     {/*  MAIN IMAGE  */}
-                    <img alt="" className="rev-slidebg" data-bgfit="cover" data-bgparallax="20" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="images/bg-1.webp" />
+                    <img alt="" className="rev-slidebg" data-bgfit="cover" data-bgparallax="20" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="images/bg-1.jpg" />
 
 
                     <div className="tp-caption tp-shape tp-shapewrapper tp-resizeme big-ipad-hidden rs-parallaxlevel-1" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="auto" data-whitespace="nowrap" data-width="none" data-hoffset="['-190','-100','-100','-100']" data-voffset="['-190','-190','-190','-190']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-frames='[{"from":"x:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"power3.easeinout"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
@@ -227,7 +227,7 @@ export default function Home() {
                 <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 
                     {/*  MAIN IMAGE  */}
-                    <img alt="" className="rev-slidebg" data-bgfit="cover" data-bgparallax="20" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="images/bg-1.webp" />
+                    <img alt="" className="rev-slidebg" data-bgfit="cover" data-bgparallax="20" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="images/bg-1.jpg" />
 
 
                     <div className="tp-caption tp-shape tp-shapewrapper tp-resizeme big-ipad-hidden rs-parallaxlevel-1" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="auto" data-whitespace="nowrap" data-width="none" data-hoffset="['-190','-100','-100','-100']" data-voffset="['-190','-190','-190','-190']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-frames='[{"from":"x:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"power3.easeinout"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
@@ -560,12 +560,12 @@ export default function Home() {
             <div className="testimonial-block">
                 <div className="inner-box">
                     <div className="info-box">
-                        <div className="thumb"><img src="images/testi-thumb-1.webp" alt="" /></div>
+                        <div className="thumb"><img src="images/testi-thumb-1.jpg" alt="" /></div>
                         <div className="rating"><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i></div>
                         <h4 className="name">Priya Sharma</h4>
                         <span className="designation">Home Chef</span>
                     </div>
-                    <div className="text">Devi's Basmati Rice has transformed our daily meals. The long grains and authentic aroma remind me of the true Punjabi flavors we grew up with. Simply exceptional!</div>
+                    <div className="text">Devi&apos;s Basmati Rice has transformed our daily meals. The long grains and authentic aroma remind me of the true Punjabi flavors we grew up with. Simply exceptional!</div>
                     <span className="icon flaticon-left-quote"></span>
                 </div>
             </div>
@@ -579,7 +579,7 @@ export default function Home() {
                         <h4 className="name">Rajesh Kumar</h4>
                         <span className="designation">Restaurant Owner</span>
                     </div>
-                    <div className="text">The Folome Rice Bran Oil is incredibly light and perfect for all kinds of Indian cooking. I've noticed a real difference in the taste and healthiness of my dishes.</div>
+                    <div className="text">The Folome Rice Bran Oil is incredibly light and perfect for all kinds of Indian cooking. I&apos;ve noticed a real difference in the taste and healthiness of my dishes.</div>
                     <span className="icon flaticon-left-quote"></span>
                 </div>
             </div>
@@ -588,12 +588,12 @@ export default function Home() {
             <div className="testimonial-block">
                 <div className="inner-box">
                     <div className="info-box">
-                        <div className="thumb"><img src="images/testi-thumb-1.webp" alt="" /></div>
+                        <div className="thumb"><img src="images/testi-thumb-1.jpg" alt="" /></div>
                         <div className="rating"><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i></div>
                         <h4 className="name">Anjali Gupta</h4>
                         <span className="designation">Homemaker</span>
                     </div>
-                    <div className="text">Outstanding quality! The packaging and the premium feel of the Dev Bhog Mogra rice are unmatched. Our whole family absolutely loves it and we won't buy anything else.</div>
+                    <div className="text">Outstanding quality! The packaging and the premium feel of the Dev Bhog Mogra rice are unmatched. Our whole family absolutely loves it and we won&apos;t buy anything else.</div>
                     <span className="icon flaticon-left-quote"></span>
                 </div>
             </div>
@@ -607,7 +607,7 @@ export default function Home() {
                         <h4 className="name">Sanjay Patel</h4>
                         <span className="designation">Father of Two</span>
                     </div>
-                    <div className="text">Folome Macaroni is now a staple in our household. It cooks perfectly every time, never gets sticky, and the kids just can't get enough of it. Highly recommend it!</div>
+                    <div className="text">Folome Macaroni is now a staple in our household. It cooks perfectly every time, never gets sticky, and the kids just can&apos;t get enough of it. Highly recommend it!</div>
                     <span className="icon flaticon-left-quote"></span>
                 </div>
             </div>
