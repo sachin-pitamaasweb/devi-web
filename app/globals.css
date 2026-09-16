@@ -146,16 +146,60 @@ a {
 .main-header .logo img {
   width: 170px !important;
   max-width: none !important;
-  max-height: 120px;
+  height: auto !important;
+  max-height: none;
 }
 
 .sticky-header .logo img {
-  height: 40px !important;
+  height: 60px !important;
   width: auto !important;
   max-height: none !important;
+}
+
+@media (max-width: 1023px) {
+  .main-header .logo img {
+    width: auto !important;
+    height: 44px !important;
+  }
 }
 
 .main-menu .navigation > li > a {
   font-size: 17px !important;
   font-weight: 600 !important;
+}
+
+.main-footer .logo img {
+  width: 180px !important;
+  height: auto !important;
+}
+
+/* Compact, readable hero treatment for phone-sized screens. */
+@media (max-width: 767px) {
+  .main-slider .hero-decoration {
+    display: none !important;
+  }
+
+  .main-slider .tp-caption:has(> .hero-decoration) {
+    display: none !important;
+  }
+
+  .main-slider .hero-heading {
+    width: min(58vw, 240px) !important;
+    max-width: min(58vw, 240px) !important;
+    margin: 0 !important;
+    font-size: clamp(29px, 8.5vw, 35px) !important;
+    line-height: 1.13 !important;
+  }
+
+  .main-slider .hero-product-image {
+    position: relative;
+    right: -24px;
+    transform: scale(0.58);
+    transform-origin: right center;
+  }
+
+  .main-slider .theme-btn.btn-style-one {
+    min-width: 142px;
+    padding: 13px 20px;
+  }
 }

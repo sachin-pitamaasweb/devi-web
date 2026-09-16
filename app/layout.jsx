@@ -6,8 +6,15 @@ import LegacyScripts from "../components/LegacyScripts";
 import Preloader from "../components/Preloader";
 
 export const metadata = {
-  title: "Fesho | Organic Store PHP Template | Home Page 01",
-  description: "Organic Store",
+  title: "DCS | Devi Chand & Sons",
+  description:
+    "Devi Chand & Sons is a trusted Indian food company offering quality basmati rice, long grain rice, rice bran oil, and food products for domestic and international markets.",
+  openGraph: {
+    title: "DCS | Devi Chand & Sons",
+    description:
+      "Quality Indian rice and food products from Devi Chand & Sons, serving domestic and international markets.",
+    siteName: "Devi Chand & Sons",
+  },
 };
 
 export default function RootLayout({ children }) {

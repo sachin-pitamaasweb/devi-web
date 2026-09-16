@@ -42,37 +42,37 @@ export default function Home() {
                     <img alt="" className="rev-slidebg" data-bgfit="cover" data-bgparallax="20" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="/images/bg-1.jpg" />
 
 
-                    <div className="tp-caption tp-resizeme rs-parallaxlevel-2 ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['-120','-120','-120','-120']" data-voffset="['100','100','100','100']" data-x="['right','right','right','right']" data-y="['middle','middle','middle','middle']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure><img src="/images/paddy-object.webp" alt="" /></figure>
+                    <div className="tp-caption tp-resizeme rs-parallaxlevel-2 ipad-hidden hero-decoration-layer" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['-120','-120','-120','-120']" data-voffset="['100','100','100','100']" data-x="['right','right','right','right']" data-y="['middle','middle','middle','middle']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
+                        <figure className="hero-decoration"><img src="/images/paddy-object.webp" alt="" /></figure>
                     </div>
 
 
                     <div className="tp-caption tp-resizeme rs-parallaxlevel-3 ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['120','120','120','120']" data-voffset="['180','180','180','180']" data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure><img src="/images/single-paddy.png" alt="" /></figure>
+                        <figure className="hero-decoration"><img src="/images/single-paddy.png" alt="" /></figure>
                     </div>
 
                     <div className="tp-caption tp-resizeme rs-parallaxlevel-1 ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['120','120','120','120']" data-voffset="['100','100','100','100']" data-x="['center','center','center','center']" data-y="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure><img src="/images/object-4.png" alt="" /></figure>
+                        <figure className="hero-decoration"><img src="/images/object-4.png" alt="" /></figure>
                     </div>
 
                     <div className="tp-caption tp-resizeme rs-parallaxlevel-2 ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['-30','-30','-30','-30']" data-voffset="['-180','-180','-180','-180']" data-x="['right','right','right','right']" data-y="['center','bottom','bottom','bottom']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure><img src="/images/object-5.png" alt="" /></figure>
+                        <figure className="hero-decoration"><img src="/images/object-5.png" alt="" /></figure>
                     </div>
 
                     <div className="tp-caption tp-resizeme rs-parallaxlevel-3 ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['-50','-50','0','150']" data-voffset="['120','120','120','120']" data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure><img src="/images/object-6.png" alt="" /></figure>
+                        <figure className="hero-decoration"><img src="/images/object-6.png" alt="" /></figure>
                     </div>
 
                     <div className="tp-caption tp-resizeme rs-parallaxlevel-3 ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['-30','-30','-30','-30']" data-voffset="['-30','-30','-30','-30']" data-x="['right','right','right','right']" data-y="['middle','middle','middle','middle']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure className="main-image"><img src="/images/dev-rice.webp" alt="" /></figure>
+                        <figure className="main-image hero-product-image"><img src="/images/dev-rice.webp" alt="" /></figure>
                     </div>
 
                     <div className="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[15,15,15,15]" data-paddingright="[15,15,15,15]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['900','800','750','650']" data-whitespace="normal" data-hoffset="['0','0','0','0']" data-voffset="['-40','-40','-40','-30']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"power3.easeinout"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.easeinout"}]'>
-                        <h2 style={{ fontSize: "55px", lineHeight: "1.2" }}>Bringing Quality Indian <br />Food Products to the World</h2>
+                        <h2 className="hero-heading" style={{ fontSize: "55px", lineHeight: "1.2" }}>Bringing Quality Indian <br />Food Products to the World</h2>
                     </div>
 
                     <div className="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[15,15,15,15]" data-paddingright="[15,15,15,15]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['700','750','700','450']" data-whitespace="normal" data-hoffset="['0','0','0','0']" data-voffset="['180','180','150','140']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"power3.easeinout"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.easeinout"}]'>
-                        <a href="page-about.php" className="theme-btn btn-style-one"><span className="btn-title">Explore Our Products</span></a>
+                        <a href="#about" className="theme-btn btn-style-one"><span className="btn-title">Learn More</span></a>
                     </div>
                 </li>
 
@@ -106,15 +106,15 @@ export default function Home() {
                     </div>
 
                     <div className="tp-caption tp-resizeme rs-parallaxlevel-3 ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['-30','-30','-30','-30']" data-voffset="['-30','-30','-30','-30']" data-x="['right','right','right','right']" data-y="['middle','middle','middle','middle']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure className="main-image"><img src="/images/common-product.webp" alt="" /></figure>
+                        <figure className="main-image hero-product-image"><img src="/images/common-product.webp" alt="" /></figure>
                     </div>
 
                     <div className="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[15,15,15,15]" data-paddingright="[15,15,15,15]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['900','800','750','650']" data-whitespace="normal" data-hoffset="['0','0','0','0']" data-voffset="['-40','-40','-40','-30']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"power3.easeinout"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.easeinout"}]'>
-                        <h2 style={{ fontSize: "55px", lineHeight: "1.2" }}>Bringing Quality Indian <br />Food Products to the World</h2>
+                        <h2 className="hero-heading" style={{ fontSize: "55px", lineHeight: "1.2" }}>Bringing Quality Indian <br />Food Products to the World</h2>
                     </div>
 
                     <div className="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[15,15,15,15]" data-paddingright="[15,15,15,15]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['700','750','700','450']" data-whitespace="normal" data-hoffset="['0','0','0','0']" data-voffset="['180','180','150','140']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"power3.easeinout"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.easeinout"}]'>
-                        <a href="page-about.php" className="theme-btn btn-style-one"><span className="btn-title">Explore Our Products</span></a>
+                        <a href="#about" className="theme-btn btn-style-one"><span className="btn-title">Learn More</span></a>
                     </div>
                 </li>
             </ul>
@@ -132,7 +132,7 @@ export default function Home() {
                     <div className="content">
                         <span className="title">Domestic Indian Brand</span>
                         <h3>Dev Bhog</h3>
-                        <a href="#products" className="theme-btn btn-style-two"><span className="btn-title">Explore</span></a>
+                        <a href="#product" className="theme-btn btn-style-two"><span className="btn-title">View Brand</span></a>
                     </div>
                 </div>
             </div>
@@ -144,7 +144,7 @@ export default function Home() {
                     <div className="content">
                         <span className="title">Growing Food Brand</span>
                         <h3>Folome</h3>
-                        <a href="#products" className="theme-btn btn-style-two"><span className="btn-title">Explore</span></a>
+                        <a href="#product" className="theme-btn btn-style-two"><span className="btn-title">View Brand</span></a>
                     </div>
                 </div>
             </div>
@@ -156,7 +156,7 @@ export default function Home() {
                     <div className="content">
                         <span className="title">International & Export Brand</span>
                         <h3>Punjabi Zaiqa</h3>
-                        <a href="#products" className="theme-btn btn-style-two"><span className="btn-title">Explore</span></a>
+                        <a href="#product" className="theme-btn btn-style-two"><span className="btn-title">View Brand</span></a>
                     </div>
                 </div>
             </div>
@@ -181,7 +181,6 @@ export default function Home() {
             <div className="content-column col-lg-6 col-md-12 col-sm-12">
                 <div className="inner-column wow fadeInRight">
                     <div className="sec-title">
-                        <span className="sub-title">Built on Quality. Driven by Trust.</span>
                         <h2>Established in 2008, Devi Chand &amp; Sons</h2>
                         <div className="text">has grown from a trusted Indian food business into an expanding manufacturer, packer, and exporter serving customers across multiple international markets. Based in Moga, Punjab, we operate close to one of India’s key rice-producing regions, giving us strong access to quality agricultural products and established supply networks.</div>
                     </div>
@@ -195,7 +194,7 @@ export default function Home() {
                             <p>Lorem ipsum dolor sited amet consectetur notted.</p>
                         </div>
                     </div>
-                    <a href="page-about.php" className="theme-btn btn-style-one"><span className="btn-title">Explore Our Products</span></a>
+                    <a href="#about" className="theme-btn btn-style-one"><span className="btn-title">Learn More</span></a>
                 </div>
             </div>
         </div>
@@ -207,8 +206,7 @@ export default function Home() {
 
     <div className="auto-container">
         <div className="sec-title text-center">
-            <span className="sub-title">Our Categories</span>
-            <h2>What we’re offering</h2>
+            <h2>Our Product Categories</h2>
         </div>
 
 
@@ -216,36 +214,36 @@ export default function Home() {
             {/*  Category Block */}
             <div className="category-block col-lg-3 col-md-6 col-sm-12">
                 <div className="inner-box cat-bg-1">
-                    <figure className="image"><a href="#products"><img src="images/cate-pro/oil.webp" alt="" /></a></figure>
-                    <h4><a href="#products">Folome Rice Bran Oil</a></h4>
-                    <p>When nothing prevents our to we like best be.</p>
+                    <figure className="image"><a href="#product"><img src="images/cate-pro/oil.webp" alt="" /></a></figure>
+                    <h4><a href="#product">Folome Rice Bran Oil</a></h4>
+                    <p>A wholesome cooking oil made for everyday Indian kitchens.</p>
                 </div>
             </div>
 
             {/* Category Block */}
             <div className="category-block col-lg-3 col-md-6 col-sm-12">
                 <div className="inner-box cat-bg-2">
-                    <figure className="image"><a href="#products"><img src="images/cate-pro/dev-blog.webp" alt="" /></a></figure>
-                    <h4><a href="#products">Dev Bhog Basmati Mogra</a></h4>
-                    <p>When nothing prevents our to we like best be.</p>
+                    <figure className="image"><a href="#product"><img src="images/cate-pro/dev-blog.webp" alt="" /></a></figure>
+                    <h4><a href="#product">Dev Bhog Basmati Mogra</a></h4>
+                    <p>Fragrant basmati rice with fine grains and dependable cooking quality.</p>
                 </div>
             </div>
 
             {/* Category Block */}
             <div className="category-block col-lg-3 col-md-6 col-sm-12">
                 <div className="inner-box cat-bg-3">
-                    <figure className="image"><a href="#products"><img src="images/cate-pro/punjabi-zaiqa.webp" alt="" /></a></figure>
-                    <h4><a href="#products">Punjabi Zaiqa Long Grain Rice</a></h4>
-                    <p>When nothing prevents our to we like best be.</p>
+                    <figure className="image"><a href="#product"><img src="images/cate-pro/punjabi-zaiqa.webp" alt="" /></a></figure>
+                    <h4><a href="#product">Punjabi Zaiqa Long Grain Rice</a></h4>
+                    <p>Long grain rice that brings authentic Punjabi flavour to every meal.</p>
                 </div>
             </div>
 
             {/* Category Block */}
             <div className="category-block col-lg-3 col-md-6 col-sm-12">
                 <div className="inner-box cat-bg-4">
-                    <figure className="image"><a href="#products"><img src="images/cate-pro/pasta.webp" alt="" /></a></figure>
-                    <h4><a href="#products">Folome Macaroni</a></h4>
-                    <p>When nothing prevents our to we like best be.</p>
+                    <figure className="image"><a href="#product"><img src="images/cate-pro/pasta.webp" alt="" /></a></figure>
+                    <h4><a href="#product">Folome Macaroni</a></h4>
+                    <p>Quality pasta made for easy, enjoyable family meals.</p>
                 </div>
             </div>
         </div>
@@ -256,9 +254,8 @@ export default function Home() {
     <div className="auto-container">
         <div className="content-box">
             <div className="sec-title">
-                <span className="sub-title">Premium Quality</span>
-                <h2>Discover Our Finest Range</h2>
-                <div className="text">We take pride in offering the highest quality organic products, carefully sourced and processed to bring the authentic taste of tradition to your kitchen.</div>
+                <h2>Our Commitment to Quality</h2>
+                <div className="text">We combine careful sourcing, responsible processing, and consistent standards to deliver food products families can trust.</div>
             </div>
         </div>
     </div>
@@ -268,10 +265,9 @@ export default function Home() {
     <div className="auto-container">
         <div className="outer-box">
             <div className="sec-title light mb-0">
-                <span className="sub-title">Need Our Help?</span>
-                <h3>We’re leader in organic market</h3>
+                <h3>A Trusted Name in Quality Foods</h3>
             </div>
-            <a href="#products" className="theme-btn btn-style-one"><span className="btn-title">Explore Our Products</span></a>
+            <a href="#contact" className="theme-btn btn-style-one"><span className="btn-title">Get in Touch</span></a>
         </div>
     </div>
 </section>
@@ -279,8 +275,7 @@ export default function Home() {
 <section id="product" className="featured-products">
     <div className="auto-container">
         <div className="sec-title text-center">
-            <span className="sub-title">Special Offers</span>
-            <h2>Check today’s hot deal <br />products</h2>
+            <h2>Our Food Range</h2>
         </div>
 
         <div className="row">
@@ -334,8 +329,8 @@ export default function Home() {
             <div className="feature-block col-lg-3 col-md-6 col-sm-12 mb-sm-50">
                 <div className="inner">
                     <span className="icon flaticon-money-bag"></span>
-                    <h5><a href="#">Best Value</a></h5>
-                    <div className="text">Premium products at fair prices</div>
+                    <h5><a href="#">Trusted Quality</a></h5>
+                    <div className="text">Consistent standards in every product we make</div>
                 </div>
             </div>
 
@@ -352,8 +347,8 @@ export default function Home() {
             <div className="feature-block col-lg-3 col-md-6 col-sm-12 mb-sm-50">
                 <div className="inner">
                     <span className="icon flaticon-organic"></span>
-                    <h5><a href="#">100% Organic</a></h5>
-                    <div className="text">Natural and healthy ingredients</div>
+                    <h5><a href="#">Carefully Selected</a></h5>
+                    <div className="text">Ingredients selected with care and responsibility</div>
                 </div>
             </div>
 
@@ -389,8 +384,7 @@ export default function Home() {
 <section id="testimonial" className="testimonial-section pb-0">
     <div className="auto-container">
         <div className="sec-title">
-            <span className="sub-title">What They’re Saying</span>
-            <h2>What they’re talking about our store</h2>
+            <h2>What Our Customers Say</h2>
             <div className="text">Hear directly from our happy customers who trust our premium rice, oils, and pasta for their families and businesses every single day.</div>
         </div>
 
@@ -453,20 +447,12 @@ export default function Home() {
             </div>
         </div>
 
-        <div className="other-info">
-            <div className="inner">
-                <figure className="image"><img src="images/fruit-basket.png" alt="" /></figure>
-                <h2>785,000</h2>
-                <div className="text">Healthy &amp; Pure Organic Products</div>
-            </div>
-        </div>
     </div>
 </section>
 {/*  End Testimonial Section  */}{/*  News Section  */}
 <section id="news" className="news-section pt-90 pt-lg-120">
     <div className="auto-container">
         <div className="sec-title text-center">
-            <span className="sub-title">Our Rice Brands</span>
             <h2>Discover our premium <br />rice collection</h2>
         </div>
 
@@ -475,7 +461,6 @@ export default function Home() {
             <div className="news-block col-lg-4 col-md-6 col-sm-12">
                 <div className="inner-box">
                     <div className="image-box">
-                        <span className="date">Dev<br />Bhog</span>
                         <figure className="image"><a href="#product"><img src="/images/news01.webp" alt="DCS premium rice collection" /></a></figure>
                     </div>
                     <div className="lower-content">
@@ -484,7 +469,7 @@ export default function Home() {
                         </ul>
                         <h4><a href="#product">Dev Bhog Basmati Mogra</a></h4>
                         <div className="text">A fragrant everyday basmati rice with fine grains, a delicate aroma, and dependable cooking quality.</div>
-                        <a href="#product" className="theme-btn btn-style-three"><span className="btn-title">Explore range</span></a>
+                        <a href="#product" className="theme-btn btn-style-three"><span className="btn-title">Learn More</span></a>
                     </div>
                 </div>
             </div>
@@ -493,7 +478,6 @@ export default function Home() {
             <div className="news-block col-lg-4 col-md-6 col-sm-12">
                 <div className="inner-box">
                     <div className="image-box">
-                        <span className="date">Punjabi<br />Zaiqa</span>
                         <figure className="image"><a href="#product"><img src="/images/news01.webp" alt="DCS premium rice collection" /></a></figure>
                     </div>
                     <div className="lower-content">
@@ -502,7 +486,7 @@ export default function Home() {
                         </ul>
                         <h4><a href="#product">Punjabi Zaiqa Long Grain Rice</a></h4>
                         <div className="text">Selected long grains, carefully packed to bring authentic Punjabi taste to kitchens around the world.</div>
-                        <a href="#product" className="theme-btn btn-style-three"><span className="btn-title">Explore range</span></a>
+                        <a href="#product" className="theme-btn btn-style-three"><span className="btn-title">Learn More</span></a>
                     </div>
                 </div>
             </div>
@@ -511,7 +495,6 @@ export default function Home() {
             <div className="news-block col-lg-4 col-md-6 col-sm-12">
                 <div className="inner-box">
                     <div className="image-box">
-                        <span className="date">DCS<br />Select</span>
                         <figure className="image"><a href="#product"><img src="/images/news01.webp" alt="DCS premium rice collection" /></a></figure>
                     </div>
                     <div className="lower-content">
@@ -520,7 +503,7 @@ export default function Home() {
                         </ul>
                         <h4><a href="#product">DCS Premium Long Grain Rice</a></h4>
                         <div className="text">Wholesome long grain rice chosen for its clean texture, versatility, and consistent results in every meal.</div>
-                        <a href="#product" className="theme-btn btn-style-three"><span className="btn-title">Explore range</span></a>
+                        <a href="#product" className="theme-btn btn-style-three"><span className="btn-title">Learn More</span></a>
                     </div>
                 </div>
             </div>

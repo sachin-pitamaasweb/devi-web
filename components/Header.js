@@ -2,32 +2,6 @@ export default function Header() {
   return (
     <>
 <header className="main-header header-style-one" id="home">
-	{/*  Header Top  */}
-	<div className="header-top">
-		<div className="auto-container">
-			<div className="inner-container">
-				<div className="top-left">
-					{/*  Info List  */}
-					<ul className="info-list">
-						<li><i className="fa fa-map"></i> 88 broklyn golden street. New York</li>
-						<li><i className="fa fa-envelope"></i> <a href="/cdn-cgi/l/email-protection#cca2a9a9a8a4a9a0bc8cafa3a1bcada2b5e2afa3a1"><span className="__cf_email__" data-cfemail="9ff1fafafbf7faf3efdffcf0f2effef1e6b1fcf0f2">[email&nbsp;protected]</span></a></li>
-						<li><i className="fa fa-mobile"></i> <a href="tel:+1(307)776-0608">+ 1 (307) 776-0608</a></li>
-					</ul>
-				</div>
-
-				<div className="top-right">
-					<ul className="social-links">
-						<li><a href="#"><span className="fab fa-twitter"></span></a></li>
-						<li><a href="#"><span className="fab fa-facebook"></span></a></li>
-						<li><a href="#"><span className="fab fa-pinterest"></span></a></li>
-						<li><a href="#"><span className="fab fa-instagram"></span></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	{/*  Header Top  */}
-
 	{/*  Header Upper  */}
 	<div className="header-upper">
 		<div className="auto-container">
@@ -51,7 +25,7 @@ export default function Header() {
 					{/*  Main Menu End */}
 
 					<div className="outer-box">
-						<a href="#products" className="theme-btn btn-style-one shop-now"><span className="btn-title">Reach Now</span></a>
+						<a href="#contact" className="theme-btn btn-style-one shop-now"><span className="btn-title">Contact Us</span></a>
 
 						{/* Mobile Navigation Toggler */}
 						<div className="mobile-nav-toggler"><span className="icon lnr-icon-bars"></span></div>

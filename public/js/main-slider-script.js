@@ -52,7 +52,7 @@ function initMainSlider() {
         responsiveLevels: [1200, 1040, 802, 480],
         visibilityLevels: [1200, 1040, 802, 480],
         gridwidth: [1200, 1040, 800, 480],
-        gridheight: [800, 700, 700, 700],
+        gridheight: [800, 700, 620, 520],
         lazyType: "none",
         parallax: {
             type: "mouse",

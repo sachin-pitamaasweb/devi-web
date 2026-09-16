@@ -28,7 +28,7 @@ export default function Footer() {
 						<ul className="user-links">
 							<li><a href="index.php">Home</a></li>
 							<li><a href="#">Pages</a></li>
-							<li><a href="shop-products.php">Shop</a></li>
+							<li><a href="#product">Our Products</a></li>
 							<li><a href="news-grid.php">News</a></li>
 							<li><a href="page-contact.php">Contact</a></li>
 						</ul>
@@ -64,13 +64,13 @@ export default function Footer() {
 				{/* Footer Column */}
 				<div className="footer-column col-lg-3 col-md-6 col-sm-12">
 					<div className="footer-widget Newsletter-widget">
-						<h5 className="widget-title">Newsletter</h5>
+						<h5 className="widget-title">Stay Connected</h5>
 						<div className="widget-content">
 							<div className="subscribe-form">
 								<form method="post" action="#">
 									<div className="form-group">
 										<input type="email" name="email" className="email" defaultValue="" placeholder="Enter your email" required />
-										<button type="button" className="theme-btn btn-style-one"><span className="btn-title">Subscribe</span></button>
+										<button type="button" className="theme-btn btn-style-one"><span className="btn-title">Join Updates</span></button>
 									</div>
 								</form>
 							</div>
@@ -86,7 +86,7 @@ export default function Footer() {
 		<div className="auto-container">
 			<div className="inner-container">
 					<div className="copyright-text">
-					<p>© Copyright reserved by <a href="index.php">kodesolution.com</a></p>
+					<p>© Devi Chand &amp; Sons. All rights reserved.</p>
 				</div>
 			</div>
 		</div>
