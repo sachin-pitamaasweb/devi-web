@@ -197,7 +197,7 @@
 		<div className="search-inner">
 			<form method="post" action="index.php">
 				<div className="form-group">
-					<input type="search" name="search-field" value="" placeholder="Search..." required="">
+					<input type="search" name="search-field" defaultValue="" placeholder="Search..." required="" />
 					<button type="submit"><i className="lnr-icon-search"></i></button>
 				</div>
 			</form>
@@ -848,7 +848,7 @@
                             <div className="subscribe-form">
                                 <form method="post" action="#">
                                     <div className="form-group">
-                                        <input type="email" name="email" className="email" value="" placeholder="Enter your email" required="">
+                                        <input type="email" name="email" className="email" defaultValue="" placeholder="Enter your email" required="" />
                                             <button type="button" className="theme-btn btn-style-one"><span className="btn-title">Subscribe</span></button>
                                     </div>
                                 </form>

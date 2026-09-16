@@ -82,8 +82,12 @@ var THEMEMASCOT = {};
 		
 		var mobileMenuContent = $('.main-header .nav-outer .main-menu .navigation').html();
 
-		$('.mobile-menu .navigation').append(mobileMenuContent);
-		$('.sticky-header .navigation').append(mobileMenuContent);
+		if ($('.mobile-menu .navigation').children().length === 0) {
+			$('.mobile-menu .navigation').append(mobileMenuContent);
+		}
+		if ($('.sticky-header .navigation').children().length === 0) {
+			$('.sticky-header .navigation').append(mobileMenuContent);
+		}
 		$('.mobile-menu .close-btn').on('click', function() {
 			$('body').removeClass('mobile-menu-visible');
 		});

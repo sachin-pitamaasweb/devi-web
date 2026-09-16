@@ -1,158 +1,41 @@
+"use client";
+import { useEffect } from "react";
+
+// Page component for Devi Chand & Sons homepage
 export default function Home() {
+  console.log("Rendering Home");
+  useEffect(() => {
+    let intervalId;
+    let attempts = 0;
+    const runSlider = () => {
+      attempts++;
+      if (typeof window !== "undefined" && typeof window.initMainSlider === "function") {
+        window.initMainSlider();
+        if (window.jQuery && window.jQuery("#rev_slider_one").hasClass("revslider-initialised")) {
+          clearInterval(intervalId);
+        }
+      }
+      if (attempts > 30) {
+        clearInterval(intervalId);
+      }
+    };
+    intervalId = setInterval(runSlider, 300);
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <>
+
       {/* Original Content */}
       
-<div className="page-wrapper">
+
 {/*  Preloader  */}
 {/*  Preloader  */}
 {/*  Preloader removed  */} 
 
-{/*  Main Header */}	
-<header className="main-header header-style-one" id="home">
-	{/*  Header Top  */}
-	<div className="header-top">
-		<div className="auto-container">
-			<div className="inner-container">
-				<div className="top-left">
-					{/*  Info List  */}
-					<ul className="info-list">
-						<li><i className="fa fa-map"></i> 88 broklyn golden street. New York</li>
-						<li><i className="fa fa-envelope"></i> <a href="/cdn-cgi/l/email-protection#cca2a9a9a8a4a9a0bc8cafa3a1bcada2b5e2afa3a1"><span className="__cf_email__" data-cfemail="9ff1fafafbf7faf3efdffcf0f2effef1e6b1fcf0f2">[email&nbsp;protected]</span></a></li>
-						<li><i className="fa fa-mobile"></i> <a href="tel:+1(307)776-0608">+ 1 (307) 776-0608</a></li>
-					</ul>
-				</div>
-
-				<div className="top-right">
-					<ul className="social-links">
-						<li><a href="#"><span className="fab fa-twitter"></span></a></li>
-						<li><a href="#"><span className="fab fa-facebook"></span></a></li>
-						<li><a href="#"><span className="fab fa-pinterest"></span></a></li>
-						<li><a href="#"><span className="fab fa-instagram"></span></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	{/*  Header Top  */}
-
-	{/*  Header Upper  */}
-	<div className="header-upper">
-		<div className="auto-container">
-			{/*  Main box  */}
-			<div className="main-box">
-				<div className="logo">
-										<a href="index.php" title=""><img src="images/logo.png" alt="" title="Fesho" /></a>
-				</div>
-
-				{/* Nav Box */}
-				<div className="nav-outer">
-
-					<nav className="nav main-menu">
-    <ul className="navigation">
-      <li className="current"><a href="/">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#product">Product</a></li>
-      <li><a href="#export">Export</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul></nav>
-					{/*  Main Menu End */}
-
-					<div className="outer-box">
-						<a href="#products" className="theme-btn btn-style-one shop-now"><span className="btn-title">Reach Now</span></a>
-
-						{/* Mobile Navigation Toggler */}
-						<div className="mobile-nav-toggler"><span className="icon lnr-icon-bars"></span></div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-
-	{/*  Mobile Menu   */}
-	<div className="mobile-menu">
-		<div className="menu-backdrop"></div>
-
-		{/* Here Menu Will Come Automatically Via Javascript / Same Menu as in Header */}
-		<nav className="menu-box">
-			<div className="upper-box">
-				<div className="nav-logo"><a href="index.php"><img src="images/logo.png" alt="" title="Fesho" /></a></div>
-				<div className="close-btn"><i className="icon flaticon-close"></i></div>
-			</div>
-
-			<ul className="navigation clearfix">{/* Keep This Empty / Menu will come through Javascript */}</ul>
-			<ul className="contact-list-one">
-				<li>
-					<i className="fa fa-phone-square"></i>
-					<strong>Phone</strong>
-					<a href="tel:+926668880000">+92 666 888 0000</a>
-				</li>
-				<li>
-					<strong>Email</strong>
-					<i className="fa fa-envelope"></i>
-					<a href="/cdn-cgi/l/email-protection#0d636868696568617d4d6e62607d6c6374236e6260"><span className="__cf_email__" data-cfemail="f9979c9c9d919c9589b99a969489989780d79a9694">[email&nbsp;protected]</span></a>
-				</li>
-				<li>
-					<strong>Address</strong>
-					<i className="fa fa-map-marker"></i>
-					66 road, broklyn street new york
-					</li>
-			</ul>
+	
 
 
-			<ul className="social-links">
-				<li><a href="#"><span className="fab fa-twitter"></span></a></li>
-				<li><a href="#"><span className="fab fa-facebook"></span></a></li>
-				<li><a href="#"><span className="fab fa-pinterest"></span></a></li>
-				<li><a href="#"><span className="fab fa-instagram"></span></a></li>
-			</ul>
-		</nav>
-	</div>{/*  End Mobile Menu  */}
-
-
-	{/*  Header Search  */}
-	<div className="search-popup">
-		<span className="search-back-drop"></span>
-		<button className="close-search"><span className="fa fa-times"></span></button>
-
-		<div className="search-inner">
-			<form method="post" action="index.php">
-				<div className="form-group">
-					<input type="search" name="search-field" value="" placeholder="Search..." required="" />
-					<button type="submit"><i className="lnr-icon-search"></i></button>
-				</div>
-			</form>
-		</div>
-	</div>
-	{/*  End Header Search  */}
-
-	{/*  Sticky Header   */}
-	<div className="sticky-header">
-		<div className="auto-container">
-			<div className="inner-container">
-				{/* Logo */}
-				<div className="logo">
-								<a href="index.php" title=""><img src="images/logo.png" alt="" title="" /></a> 
-				</div>
-
-				{/* Right Col */}
-				<div className="nav-outer">
-					{/*  Main Menu  */}
-					<nav className="main-menu">
-						<div className="navbar-collapse show collapse clearfix">
-								<ul className="navigation clearfix">{/* Keep This Empty / Menu will come through Javascript */}</ul>
-						</div>
-					</nav>{/*  Main Menu End */}
-
-					{/* Mobile Navigation Toggler */}
-					<div className="mobile-nav-toggler"><span className="icon lnr-icon-bars"></span></div>
-				</div>
-			</div>
-		</div>
-	</div>{/*  End Sticky Menu  */}
-</header>
-{/* End Main Header  */}
 
 
 
@@ -177,36 +60,36 @@ export default function Home() {
                 <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 
                     {/*  MAIN IMAGE  */}
-                    <img alt="" className="rev-slidebg" data-bgfit="cover" data-bgparallax="20" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="images/bg-1.jpg" />
+                    <img alt="" className="rev-slidebg" data-bgfit="cover" data-bgparallax="20" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="/images/bg-1.jpg" />
 
 
                     <div className="tp-caption tp-shape tp-shapewrapper tp-resizeme big-ipad-hidden rs-parallaxlevel-1" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="auto" data-whitespace="nowrap" data-width="none" data-hoffset="['-190','-100','-100','-100']" data-voffset="['-190','-190','-190','-190']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-frames='[{"from":"x:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"power3.easeinout"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure><img src="images/rice-object.webp" alt="" /></figure>
+                        <figure><img src="/images/rice-object.webp" alt="" /></figure>
                     </div>
 
                     <div className="tp-caption tp-resizeme rs-parallaxlevel-2 ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['-120','-120','-120','-120']" data-voffset="['100','100','100','100']" data-x="['right','right','right','right']" data-y="['middle','middle','middle','middle']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure><img src="images/paddy-object.webp" alt="" /></figure>
+                        <figure><img src="/images/paddy-object.webp" alt="" /></figure>
                     </div>
 
 
                     <div className="tp-caption tp-resizeme rs-parallaxlevel-3 ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['120','120','120','120']" data-voffset="['180','180','180','180']" data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure><img src="images/single-paddy.png" alt="" /></figure>
+                        <figure><img src="/images/single-paddy.png" alt="" /></figure>
                     </div>
 
                     <div className="tp-caption tp-resizeme rs-parallaxlevel-1 ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['120','120','120','120']" data-voffset="['100','100','100','100']" data-x="['center','center','center','center']" data-y="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure><img src="images/object-4.png" alt="" /></figure>
+                        <figure><img src="/images/object-4.png" alt="" /></figure>
                     </div>
 
                     <div className="tp-caption tp-resizeme rs-parallaxlevel-2 ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['-30','-30','-30','-30']" data-voffset="['-180','-180','-180','-180']" data-x="['right','right','right','right']" data-y="['center','bottom','bottom','bottom']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure><img src="images/object-5.png" alt="" /></figure>
+                        <figure><img src="/images/object-5.png" alt="" /></figure>
                     </div>
 
                     <div className="tp-caption tp-resizeme rs-parallaxlevel-3 ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['-50','-50','0','150']" data-voffset="['120','120','120','120']" data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure><img src="images/object-6.png" alt="" /></figure>
+                        <figure><img src="/images/object-6.png" alt="" /></figure>
                     </div>
 
                     <div className="tp-caption tp-resizeme rs-parallaxlevel-3 ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['-30','-30','-30','-30']" data-voffset="['-30','-30','-30','-30']" data-x="['right','right','right','right']" data-y="['middle','middle','middle','middle']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure className="main-image"><img src="images/dev-rice.png" alt="" /></figure>
+                        <figure className="main-image"><img src="/images/dev-rice.webp" alt="" /></figure>
                     </div>
 
                     <div className="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[15,15,15,15]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['900','800','750','650']" data-whitespace="normal" data-hoffset="['0','0','0','0']" data-voffset="['-210','-210','-180','-170']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"power3.easeinout"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.easeinout"}]'>
@@ -227,36 +110,36 @@ export default function Home() {
                 <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 
                     {/*  MAIN IMAGE  */}
-                    <img alt="" className="rev-slidebg" data-bgfit="cover" data-bgparallax="20" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="images/bg-1.jpg" />
+                    <img alt="" className="rev-slidebg" data-bgfit="cover" data-bgparallax="20" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="/images/bg-1.jpg" />
 
 
                     <div className="tp-caption tp-shape tp-shapewrapper tp-resizeme big-ipad-hidden rs-parallaxlevel-1" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="auto" data-whitespace="nowrap" data-width="none" data-hoffset="['-190','-100','-100','-100']" data-voffset="['-190','-190','-190','-190']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-frames='[{"from":"x:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"power3.easeinout"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure><img src="images/rice-object.webp" alt="" /></figure>
+                        <figure><img src="/images/rice-object.webp" alt="" /></figure>
                     </div>
 
                     <div className="tp-caption tp-resizeme rs-parallaxlevel-2 ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['-120','-120','-120','-120']" data-voffset="['100','100','100','100']" data-x="['right','right','right','right']" data-y="['middle','middle','middle','middle']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure><img src="images/paddy-object.webp" alt="" /></figure>
+                        <figure><img src="/images/paddy-object.webp" alt="" /></figure>
                     </div>
 
 
                     <div className="tp-caption tp-resizeme rs-parallaxlevel-3 ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['120','120','120','120']" data-voffset="['180','180','180','180']" data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure><img src="images/single-paddy.png" alt="" /></figure>
+                        <figure><img src="/images/single-paddy.png" alt="" /></figure>
                     </div>
 
                     <div className="tp-caption tp-resizeme rs-parallaxlevel-1 ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['120','120','120','120']" data-voffset="['100','100','100','100']" data-x="['center','center','center','center']" data-y="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure><img src="images/object-4.png" alt="" /></figure>
+                        <figure><img src="/images/object-4.png" alt="" /></figure>
                     </div>
 
                     <div className="tp-caption tp-resizeme rs-parallaxlevel-2 ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['-30','-30','-30','-30']" data-voffset="['-180','-180','-180','-180']" data-x="['right','right','right','right']" data-y="['center','bottom','bottom','bottom']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure><img src="images/object-5.png" alt="" /></figure>
+                        <figure><img src="/images/object-5.png" alt="" /></figure>
                     </div>
 
                     <div className="tp-caption tp-resizeme rs-parallaxlevel-3 ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['-50','-50','0','150']" data-voffset="['120','120','120','120']" data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure><img src="images/object-6.png" alt="" /></figure>
+                        <figure><img src="/images/object-6.png" alt="" /></figure>
                     </div>
 
                     <div className="tp-caption tp-resizeme rs-parallaxlevel-3 ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap" data-width="none" data-hoffset="['-30','-30','-30','-30']" data-voffset="['-30','-30','-30','-30']" data-x="['right','right','right','right']" data-y="['middle','middle','middle','middle']" data-frames='[{"from":"y:[100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"power3.easeinout"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"power3.easeinout"}]'>
-                        <figure className="main-image"><img src="images/common-product.webp" alt="" /></figure>
+                        <figure className="main-image"><img src="/images/common-product.webp" alt="" /></figure>
                     </div>
 
                     <div className="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[15,15,15,15]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['900','800','750','650']" data-whitespace="normal" data-hoffset="['0','0','0','0']" data-voffset="['-210','-210','-180','-170']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rx:0deg;ry:0;rz:0;sx:1;sy:1;skx:0;sky:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"power3.easeinout"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.easeinout"}]'>
@@ -282,7 +165,7 @@ export default function Home() {
             {/*  Banner Box One  */}
             <div className="banner-box-one col-lg-4 col-md-6 col-sm-12">
                 <div className="inner-box">
-                    <div className="image"><img src="images/top-banner-1.webp" alt="" /></div>
+                    <div className="image"><img src="/images/top-banner-1.webp" alt="" /></div>
                     <div className="content">
                         <span className="title">Domestic Indian Brand</span>
                         <h3>Dev Bhog</h3>
@@ -294,7 +177,7 @@ export default function Home() {
             {/*  Banner Box One  */}
             <div className="banner-box-one style-two col-lg-4 col-md-6 col-sm-12">
                 <div className="inner-box">
-                    <div className="image"><img src="images/top-banner-2.webp" alt="" /></div>
+                    <div className="image"><img src="/images/top-banner-2.webp" alt="" /></div>
                     <div className="content">
                         <span className="title">Growing Food Brand</span>
                         <h3>Folome</h3>
@@ -306,7 +189,7 @@ export default function Home() {
             {/*  Banner Box One  */}
             <div className="banner-box-one style-three col-lg-4 col-md-6 col-sm-12">
                 <div className="inner-box">
-                    <div className="image"><img src="images/top-banner-3.webp" alt="" /></div>
+                    <div className="image"><img src="/images/top-banner-3.webp" alt="" /></div>
                     <div className="content">
                         <span className="title">International & Export Brand</span>
                         <h3>Punjabi Zaiqa</h3>
@@ -701,101 +584,11 @@ export default function Home() {
         </ul>
     </div>
 </section>
-{/* End Gallery Section  */}{/*  Main Footer  */}
-<footer className="main-footer">
-	{/* Widgets Section */}
-	<div className="widgets-section">
-		<div className="auto-container">
+{/* End Gallery Section  */}
 
-			<div className="row">
-				{/* Footer Column */}
-				<div className="footer-column col-lg-4 col-md-6 col-sm-12">
-					<div className="footer-widget about-widget">
-						<div className="logo"><a href="index.php"><img src="images/logo-2.png" alt="" /></a></div>
-						<div className="text">We’re providing every day fresh and quality products for you.</div>
-						<ul className="social-icon-one">
-							<li><a href="#"><i className="fab fa-twitter"></i></a></li>
-							<li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-							<li><a href="#"><i className="fab fa-pinterest"></i></a></li>
-							<li><a href="#"><i className="fab fa-instagram"></i></a></li>
-						</ul>
-					</div>
-				</div>
 
-				{/* Footer Column */}
-				<div className="footer-column col-lg-2 col-md-6 col-sm-12">
-					<div className="footer-widget">
-						<h5 className="widget-title">Explore</h5>
-						<ul className="user-links">
-							<li><a href="index.php">Home</a></li>
-							<li><a href="#">Pages</a></li>
-							<li><a href="shop-products.php">Shop</a></li>
-							<li><a href="news-grid.php">News</a></li>
-							<li><a href="page-contact.php">Contact</a></li>
-						</ul>
-					</div>
-				</div>
 
-				{/* Footer Column */}
-				<div className="footer-column col-lg-3 col-md-6 col-sm-12">
-					<div className="footer-widget">
-						<h5 className="widget-title">Contact</h5>
-						<div className="widget-content">
-							<ul className="contact-list contact-info">
-								<li>
-									<i className="fa fa-phone-square"></i>
-									<strong>Phone</strong>
-									<a href="tel:+918283000737">+91 82830 00737</a>
-								</li>
-								<li>
-									<strong>Email</strong>
-									<i className="fa fa-envelope"></i>
-									<a href="mailto:info@devbhogbasmatirice.com">info@devbhogbasmatirice.com</a>
-								</li>
-								<li>
-									<strong>Address</strong>
-									<i className="fa fa-map-marker"></i>
-									Ware house road Nihal Singh wala<br />Moga, Punjab 142055
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
 
-				{/* Footer Column */}
-				<div className="footer-column col-lg-3 col-md-6 col-sm-12">
-					<div className="footer-widget Newsletter-widget">
-						<h5 className="widget-title">Newsletter</h5>
-						<div className="widget-content">
-							<div className="subscribe-form">
-								<form method="post" action="#">
-									<div className="form-group">
-										<input type="email" name="email" className="email" value="" placeholder="Enter your email" required="" />
-										<button type="button" className="theme-btn btn-style-one"><span className="btn-title">Subscribe</span></button>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	{/* Footer Bottom */}
-	<div className="footer-bottom">
-		<div className="auto-container">
-			<div className="inner-container">
-					<div className="copyright-text">
-					<p>© Copyright reserved by <a href="index.php">kodesolution.com</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
-{/* End Main Footer  */}
-
-</div>{/*  End Page Wrapper  */}
 
 
 {/*  Scroll To Top  */}

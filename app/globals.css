@@ -30,6 +30,106 @@ body {
   margin: 0;
 }
 
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  display: grid;
+  place-items: center;
+  background: #fcfbf8;
+  opacity: 1;
+  transition: opacity 0.45s ease, visibility 0.45s ease;
+}
+
+.preloader__content {
+  width: min(300px, calc(100vw - 64px));
+  text-align: center;
+  animation: preloader-logo-in 0.55s ease-out both;
+}
+
+/* Disable the original template's GIF and duplicate loading label. */
+.preloader::before,
+.preloader::after {
+  content: none !important;
+}
+
+.preloader__logo {
+  display: block;
+  width: min(166px, 58vw);
+  height: auto;
+  margin: 0 auto 30px;
+}
+
+.preloader__bar {
+  height: 3px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e7e8e8;
+}
+
+.preloader__bar-fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #0075bc;
+  transition: width 0.12s linear;
+}
+
+.preloader__meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  color: #68737b;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@keyframes preloader-logo-in {
+  from {
+    opacity: 0;
+    transform: translateY(7px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.preloader.is-exiting {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preloader.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (max-width: 480px) {
+  .preloader__content {
+    width: min(260px, calc(100vw - 48px));
+  }
+
+  .preloader__logo {
+    width: min(144px, 60vw);
+    margin-bottom: 26px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preloader,
+  .preloader__bar-fill {
+    transition: none;
+  }
+
+  .preloader__content {
+    animation: none;
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;
