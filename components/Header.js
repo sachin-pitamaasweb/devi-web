@@ -8,7 +8,7 @@ export default function Header() {
 			{/*  Main box  */}
 			<div className="main-box">
 				<div className="logo">
-										<a href="index.php" title=""><img src="images/logo.png" alt="" title="Fesho" /></a>
+										<a href="index.php" title=""><img src="images/dcs-logo.png" alt="" title="Fesho" /></a>
 				</div>
 
 				{/* Nav Box */}
@@ -43,7 +43,7 @@ export default function Header() {
 		{/* Here Menu Will Come Automatically Via Javascript / Same Menu as in Header */}
 		<nav className="menu-box">
 			<div className="upper-box">
-				<div className="nav-logo"><a href="index.php"><img src="images/logo.png" alt="" title="Fesho" /></a></div>
+				<div className="nav-logo"><a href="index.php"><img src="images/dcs-logo.png" alt="" title="Fesho" /></a></div>
 				<div className="close-btn"><i className="icon flaticon-close"></i></div>
 			</div>
 
@@ -105,7 +105,7 @@ export default function Header() {
 			<div className="inner-container">
 				{/* Logo */}
 				<div className="logo">
-								<a href="index.php" title=""><img src="images/logo.png" alt="" title="" /></a> 
+								<a href="index.php" title=""><img src="images/dcs-logo.png" alt="" title="" /></a> 
 				</div>
 
 				{/* Right Col */}

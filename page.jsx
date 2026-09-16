@@ -61,7 +61,7 @@
 			{/*  */}
 			<div className="main-box">
 				<div className="logo">
-										<a href="index.php" title=""><img src="images/logo.png" alt="" title="Fesho"></a>
+										<a href="index.php" title=""><img src="images/dcs-logo.png" alt="" title="Fesho"></a>
 				</div>
 
 				{/*  */}
@@ -155,7 +155,7 @@
 		{/*  */}
 		<nav className="menu-box">
 			<div className="upper-box">
-				<div className="nav-logo"><a href="index.php"><img src="images/logo.png" alt="" title="Fesho"></a></div>
+				<div className="nav-logo"><a href="index.php"><img src="images/dcs-logo.png" alt="" title="Fesho"></a></div>
 				<div className="close-btn"><i className="icon flaticon-close"></i></div>
 			</div>
 
@@ -211,7 +211,7 @@
 			<div className="inner-container">
 				{/*  */}
 				<div className="logo">
-								<a href="index.php" title=""><img src="images/logo.png" alt="" title=""></a> 
+								<a href="index.php" title=""><img src="images/dcs-logo.png" alt="" title=""></a> 
 				</div>
 
 				{/*  */}
@@ -789,7 +789,7 @@
                 {/*  */}
                 <div className="footer-column col-lg-4 col-md-6 col-sm-12">
                     <div className="footer-widget about-widget">
-                        <div className="logo"><a href="index.php"><img src="images/logo-2.png" alt=""></a></div>
+                        <div className="logo"><a href="index.php"><img src="images/dcs-logo.png" alt=""></a></div>
                         <div className="text">We’re providing every day fresh and quality products for you.</div>
                         <ul className="social-icon-one">
                             <li><a href="#"><i className="fab fa-twitter"></i></a></li>

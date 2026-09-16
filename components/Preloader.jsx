@@ -74,7 +74,7 @@ export default function Preloader() {
       <div className="preloader__content">
         <img
           className="preloader__logo"
-          src="/images/logo.png"
+          src="/images/dcs-logo.png"
           alt="DCS – Devi Chand & Sons"
         />
         <div className="preloader__bar" aria-hidden="true">
