@@ -173,6 +173,13 @@ a {
   height: auto !important;
 }
 
+/* Keep the hero message separate from the product artwork. */
+.main-slider .hero-heading {
+  max-width: 560px;
+  font-size: 44px !important;
+  line-height: 1.18 !important;
+}
+
 /* Compact, readable hero treatment for phone-sized screens. */
 @media (max-width: 767px) {
   .main-slider .hero-decoration {
